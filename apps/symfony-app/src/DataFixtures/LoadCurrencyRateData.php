@@ -15,7 +15,7 @@ abstract class LoadCurrencyRateData extends Fixture  implements DependentFixture
     {
         // create 10 rows for each in currency_rate
         for ($j = 1; $j<=2; $j++) {
-            for ($i = 18; $i < 27; $i++) {
+            for ($i = 1; $i < 29; $i++) {
 
                 $currencyRate = new CurrencyRate();
                 $currencyRate->setCurrency($this->getReference("currency$j"));
