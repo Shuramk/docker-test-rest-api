@@ -14,17 +14,15 @@ docker-compose exec php php bin/console doctrine:fixtures:load
 
 Check
 ------------
-Get token:
-
+`Get token:`
 POST http://localhost/api/login_check
-
-{
+_{
     "username": "Test",
     "password": "testtest"
-}
+}_
 
-Get current rates:
+`Get current rates:`
 GET http://localhost/api/rates
 
-Get archive rates:
-GET http://localhost/api/rates?date=YY-mm-dd
+`Get archive rates:`
+GET http://localhost/api/rates_history?date=YY-mm-dd
