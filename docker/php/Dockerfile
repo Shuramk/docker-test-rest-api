@@ -20,4 +20,4 @@
     COPY --chown=1000:1000 apps/symfony-app /usr/src/app
     COPY --from=composer /usr/bin/composer /usr/bin/composer
 
-    RUN composer install
+#    RUN composer install
