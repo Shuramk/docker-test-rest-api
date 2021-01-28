@@ -8,8 +8,7 @@ use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 
-
-abstract class LoadCurrencyRateData extends Fixture  implements DependentFixtureInterface
+class LoadCurrencyRateData extends Fixture  implements DependentFixtureInterface
 {
     public function load(ObjectManager $manager)
     {
