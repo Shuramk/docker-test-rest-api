@@ -19,7 +19,7 @@ class LoadCurrencyRateData extends Fixture  implements DependentFixtureInterface
                 $currencyRate = new CurrencyRate();
                 $currencyRate->setCurrency($this->getReference("currency$j"));
                 $currencyRate->setDate(new DateTime("2021-01-$i"));
-                $currencyRate->setRate(rand(20, 40) / 10);
+                $currencyRate->setRate(rand(2000, 4000) / 100);
                 $manager->persist($currencyRate);
             }
             $manager->flush();
