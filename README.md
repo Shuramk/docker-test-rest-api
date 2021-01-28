@@ -2,7 +2,7 @@
 Installation
 ------------
 ```shell
-docker-compose up --build --force-rm --no-cache
+docker-compose up -d --build
 ```
 
 ```shell
