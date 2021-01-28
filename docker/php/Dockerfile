@@ -24,4 +24,4 @@
     COPY --from=composer /usr/bin/composer /usr/bin/composer
 #   RUN composer install --no-scripts --prefer-dist \
 #      && rm -rf "$(composer config cache-dir)" "$(composer config data-dir)"
-    RUN composer install
+    RUN composer install --working-dir=apps/symfony-app
