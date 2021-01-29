@@ -24,9 +24,7 @@ services:
         volumes:
             - './apps/symfony-app/:/usr/src/app'
         restart: on-failure
-        env_file:
-            - .env
-        user: ${LOCAL_USER}
+        user: 1000:1000
     db:
         image: mysql:latest
         restart: unless-stopped
